@@ -25,7 +25,9 @@
             </li>
           </ul>
           <ul class="mid-header-container">
-            <li><a class="menu" href="Agencja">Agencja</a></li>
+            <li>
+              <a class="menu current" href="Agencja">Agencja</a>
+            </li>
             <li><a class="menu" href="portfolio.html">Portfolio</a></li>
             <li><a class="menu" href="Kontakt">Kontakt</a></li>
           </ul>
@@ -59,7 +61,9 @@
               EFEKTYWNE ROZWIĄZANIA <br />
               DLA WASZEGO BIZNESU
             </h1>
-            <button class="active" type="button">Zamów usługę</button>
+            <button class="active" type="button" data-modal-open>
+              Zamów usługę
+            </button>
           </div>
         </div>
       </section>
@@ -122,6 +126,9 @@
           <h2 class="header_2">Czym się zajmujemy</h2>
           <ul class="projects-list">
             <li>
+              <div class="project-signature-container">
+                <p class="project-signature">APLIKACJE KOMPUTEROWE</p>
+              </div>
               <img
                 src="images/Projekt-1.jpg"
                 alt="1"
@@ -130,6 +137,9 @@
               />
             </li>
             <li>
+              <div class="project-signature-container">
+                <p class="project-signature">APLIKACJE MOBILNE</p>
+              </div>
               <img
                 src="images/Projekt-2.jpg"
                 alt="2"
@@ -138,6 +148,9 @@
               />
             </li>
             <li>
+              <div class="project-signature-container">
+                <p class="project-signature">ROZWIĄZANIA GRAFICZNE</p>
+              </div>
               <img
                 src="images/Projekt-3.jpg"
                 alt="3"
@@ -392,5 +405,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="cross">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
